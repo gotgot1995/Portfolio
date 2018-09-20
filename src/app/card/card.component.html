@@ -1,0 +1,15 @@
+<div class="card hoverable">
+	<div class="card-image" *ngIf="image">
+		<img src="{{image}}">
+		<!-- <span class="card-title"><h4>{{ title }}</h4></span> -->
+	</div>
+	<div class="card-content" [ngClass]="contentClasses">
+		<div class="card-title" *ngIf="!image" [ngClass]="titleClasses">
+			<h4>{{ title }}</h4>
+		</div>
+		{{ content }}
+	</div>
+	<div class="card-action" *ngIf="action" [ngClass]="actionClasses">
+		{{ action }}
+	</div>
+</div>

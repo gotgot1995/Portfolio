@@ -13,6 +13,7 @@ import { RoutingModule } from './routing/routing.module';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,13 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     NotFoundComponent,
     ExperienceComponent,
     EducationComponent,
-    SideNavComponent
+    SideNavComponent,
+    CardComponent
   ],
   imports: [
     RoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    NoopAnimationsModule,
     MaterializeComponentModule
   ],
   providers: [],

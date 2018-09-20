@@ -1,3 +1,9 @@
-<p>
-  experience works!
-</p>
+<div class="container-fluid">
+	<div class="row" *ngFor="let card of cards index as i">
+		<div class="col s12 xl3" [ngClass]="i % 2 === 0 ? 'offset-xl6' : 'offset-xl3'">
+			<app-card [image]="card.image"
+        [title]="card.title" [content]="card.content" [contentClasses]="card.contentClasses"
+        [action]="card.action" [actionClasses]="card.actionClasses"></app-card>
+		</div>
+	</div>
+</div>
